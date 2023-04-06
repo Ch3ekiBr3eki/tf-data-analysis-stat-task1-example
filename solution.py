@@ -2,10 +2,11 @@ import pandas as pd
 import numpy as np
 
 
-chat_id = 123456 # Ваш chat ID, не меняйте название переменной
+chat_id = 323297403 # Ваш chat ID, не меняйте название переменной
 
 def solution(x: np.array) -> float:
-    # Измените код этой функции
-    # Это будет вашим решением
-    # Не меняйте название функции и её аргументы
-    return x.mean() # Ваш ответ
+    x -= 567
+    log_x = np.log(x)
+    log_mean = np.mean(log_x)
+    a = np.exp(log_mean)
+    return a
